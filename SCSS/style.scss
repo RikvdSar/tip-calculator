@@ -1,1 +1,57 @@
 @import 'base';
+
+button {
+    border: none;
+    border-radius: 5%;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 700;
+    color: white;
+    background-color: $var-clr1;
+}
+
+body {
+    background-color: $var-clr4;
+}
+
+header {
+    padding: 2em;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    color: $var-clr1;
+    opacity: 0.7;
+}
+
+.calculator {
+    background-color: white;
+    border-radius: 5%;
+    padding: 1em 2em;
+}
+
+form {
+    display: grid;
+}
+
+form label {
+    margin-top: 1em;
+    color: $var-clr2;
+    font-weight: 700;
+}
+
+input {
+    margin-top: 1rem;
+    width: 90%;
+    background-color: $var-clr5;
+    text-align: right;
+    font-weight: 700;
+    color: $var-clr1;
+}
+
+.input__wrapper {
+    padding: 0.5em;
+    background-color: $var-clr5;
+}
