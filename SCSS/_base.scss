@@ -1,0 +1,17 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+$primary-clr: hsl(172, 67%, 45%);
+$var-clr1: hsl(183, 100%, 15%);
+$var-clr2: hsl(186, 14%, 43%);
+$var-clr3: hsl(184, 14%, 56%);
+$var-clr4: hsl(185, 41%, 84%);
+$var-clr5: hsl(189, 41%, 97%);
+
+body {
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+}
