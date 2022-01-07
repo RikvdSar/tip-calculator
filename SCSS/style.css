@@ -31,6 +31,7 @@ button {
   font-weight: 700;
   color: white;
   background-color: #00494d;
+  font-size: 30px;
 }
 
 body {
@@ -52,7 +53,7 @@ h1 {
 .calculator {
   background-color: white;
   border-radius: 5%;
-  padding: 1em 2em;
+  padding: 1rem 2rem;
 }
 
 form {
@@ -61,8 +62,9 @@ form {
 }
 
 form label {
-  margin-top: 1em;
+  margin-top: 2rem;
   color: #5e7a7d;
+  font-size: 22px;
   font-weight: 700;
 }
 
@@ -78,5 +80,80 @@ input {
 .input__wrapper {
   padding: 0.5em;
   background-color: #f4fafa;
+  font-size: 24px;
+}
+
+.calculator__tip {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+}
+
+.calculator__tip--btn,
+.calculator__tip--input {
+  margin-top: 0;
+  font-size: 24px;
+  padding: 0.3em;
+  width: 140px;
+  border-radius: 5px;
+}
+
+.calculator__tip--input:focus {
+  outline: 2px solid #26c0ab;
+  color: #00494d;
+}
+
+.outputbox {
+  margin-top: 2rem;
+  background-color: #00494d;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+}
+
+.outputbox__tip-amount,
+.outputbox__total {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tip-amount--text,
+.total--text {
+  color: white;
+  letter-spacing: 0.8;
+  font-weight: 700;
+}
+
+.outputbox__text--person {
+  font-size: 18px;
+  font-weight: 700;
+  color: #7f9c9f;
+}
+
+.tip-amount--number,
+.total--number {
+  font-size: 35px;
+  font-weight: 700;
+  color: #26c0ab;
+}
+
+.reset-btn {
+  margin: 2rem 0;
+  background-color: #26c0ab;
+  color: #00494d;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 0.5em;
 }
 /*# sourceMappingURL=style.css.map */

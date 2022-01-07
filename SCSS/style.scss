@@ -8,6 +8,7 @@ button {
     font-weight: 700;
     color: white;
     background-color: $var-clr1;
+    font-size: 30px;
 }
 
 body {
@@ -29,7 +30,7 @@ h1 {
 .calculator {
     background-color: white;
     border-radius: 5%;
-    padding: 1em 2em;
+    padding: 1rem 2rem;
 }
 
 form {
@@ -37,8 +38,9 @@ form {
 }
 
 form label {
-    margin-top: 1em;
+    margin-top: 2rem;
     color: $var-clr2;
+    font-size: 22px;
     font-weight: 700;
 }
 
@@ -54,4 +56,72 @@ input {
 .input__wrapper {
     padding: 0.5em;
     background-color: $var-clr5;
+    font-size: 24px;
+}
+
+.calculator__tip {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.calculator__tip--btn,
+.calculator__tip--input {
+    margin-top: 0;
+    font-size: 24px;
+    padding: 0.3em;
+    width: 140px;
+    border-radius: 5px;
+}
+
+.calculator__tip--input:focus {
+    outline: 2px solid $primary-clr;
+    color: $var-clr1;
+}
+
+// Stlying of the ouputbox
+
+.outputbox {
+    margin-top: 2rem;
+    background-color: $var-clr1;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+}
+
+.outputbox__tip-amount,
+.outputbox__total {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tip-amount--text,
+.total--text {
+    color: white;
+    letter-spacing: 0.8;
+    font-weight: 700;
+}
+
+.outputbox__text--person {
+    font-size: 18px;
+    font-weight: 700;
+    color: $var-clr3;
+}
+
+.tip-amount--number,
+.total--number {
+    font-size: 35px;
+    font-weight: 700;
+    color: $primary-clr;
+}
+
+.reset-btn {
+    margin: 2rem 0;
+    background-color: $primary-clr;
+    color: $var-clr1;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 0.5em;
 }
