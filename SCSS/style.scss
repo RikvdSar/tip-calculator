@@ -2,7 +2,7 @@
 
 button {
     border: none;
-    border-radius: 5%;
+    border-radius: 10px;
     font-family: inherit;
     font-size: inherit;
     font-weight: 700;
@@ -39,8 +39,9 @@ h1 {
 
 .calculator {
     background-color: white;
-    border-radius: 5%;
+    border-radius: 20px;
     padding: 1rem 2rem;
+    max-width: 1000px;
 }
 
 form {
@@ -73,7 +74,7 @@ input {
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 15px;
 }
 
@@ -133,7 +134,7 @@ input {
     color: $var-clr1;
     width: 100%;
     text-transform: uppercase;
-    padding: 0.5em;
+    padding: 0.2em;
 }
 
 .reset-btn:active,
@@ -143,3 +144,31 @@ input {
     color: $var-clr5;
     opacity: 0.7;
 }   
+
+@media (min-width: 600px) {
+    main {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .calculator {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    form {
+        grid-column: 1/2;
+    }
+
+    .outputbox {
+        grid-column: 2/3;
+        display: grid;
+    }
+
+    .reset-btn {
+        margin: auto;
+    
+    }
+}
